@@ -4,7 +4,7 @@
    * I got a `[user@sahara ~]$` output because the command `cd`  is used to change the current directory to the one provided, and given we gave no argument to `cd` it automatically changed to the user's home directory. 
    * It is not an error, it is a default behavior.
 
-2.![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-12%20at%204.46.45%20PM.png?raw=true)
+2. ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-12%20at%204.46.45%20PM.png?raw=true)
    * The working directory when the command was run was `home`.
    * I got `lecture1` as an output because the `ls` lists the files and folders in the given path. Given, that we did not have an argument (did not specify the path) it showed the list of folders in the current directory, which is home.
    * It is not an error, that's how this command operates.
