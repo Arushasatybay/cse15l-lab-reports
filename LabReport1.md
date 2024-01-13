@@ -28,6 +28,7 @@
    * The working directory was `home`.
    * I got `cat: lecture1: Is a directory` as an output because the command cat is used to print the contents of a file(s), not folders. So by choosing as an argument a directory, it lets us know that the argument we chose is a directory meaning it cannot print any content. 
    * It is considered an error because the `cat` command is again used to print the contents of files, not directories.
+
 7. ![Image] 
 9.
 10.
