@@ -23,12 +23,15 @@
    * The working directory was `lecture1`.
    * I got `en-us.txt  es-mx.txt  ru.txt  zh-cn.txt` as an output because we used as an argument the directory `messages`, and the command `ls` printed the contents of the `messages` folder. 
    * It is not an error because we used the `messages` folder as a directory, which specifies a path relative to our current directory(`lecture1`). If the path(argument) chosen was not relative to the `lecture1` directory then we would have gotten an error.
-6. ![Images]()
-7. 
-8.
+6. ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-13%20at%202.32.32%20PM.png)
+   * The working directory was `home`.
+   * I got `cat: lecture1: Is a directory` as an output because the command cat is used to print the contents of a file(s), not folders. So by choosing as an argument a directory, it lets us know that the argument we chose is a directory meaning it cannot print any content. 
+   * It is considered an error because the `cat` command is again used to print the contents of files, not directories.
+7. ![Image] 
 9.
 10.
 11.
 12.
 13.
 14.
+15.
