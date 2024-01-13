@@ -3,12 +3,10 @@
    * The working directory when the command was run was `lecture1`.
    * I got a `[user@sahara ~]$` output because the command `cd`  is used to change the current directory to the one provided, and given we gave no argument to `cd` it automatically changed to the user's home directory. 
    * It is not an error, it is a default behavior.
-
 2. ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-12%20at%204.46.45%20PM.png?raw=true)
    * The working directory when the command was run was `home`.
    * I got `lecture1` as an output because the `ls` lists the files and folders in the given path. Given, that we did not have an argument (did not specify the path) it showed the list of folders in the current directory, which is home.
    * It is not an error, that's how this command operates.
-
 3. ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-13%20at%201.50.30%20PM.png?raw=true)\
    * The working directory was `lecture1`.
    * I got a blank answer as an output because the `cat` or `concatenate` command prints the contents of files given by the path(s). Given, that we gave no path it tried to print the contents of `lecture1`. However, `lecture1` is not a file but rather a directory so nothing was printed.
