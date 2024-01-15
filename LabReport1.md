@@ -56,9 +56,9 @@
 ***
 
   9) ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-15%20at%203.06.32%20PM.png?raw=true)
-      * The working directory was `lecture1`.
-      * `To use this program:
-       javac Hello.java
-       java Hello messages/en-us.txt` was outputted because the `cat` command is used to read the content of files, so when a file was given as an argument, `cat` printed the contents of the `README` file. 
-      * It is not an error. 
+       * The working directory was `lecture1`.
+       * `To use this program:
+        javac Hello.java
+        java Hello messages/en-us.txt` was outputted because the `cat` command is used to read the content of files, so when a file was given as an argument, `cat` printed the contents of the `README` file. 
+       * It is not an error. 
      
