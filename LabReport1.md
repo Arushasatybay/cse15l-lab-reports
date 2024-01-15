@@ -49,16 +49,16 @@
 ***
 
   8) ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-15%20at%202.54.21%20PM.png?raw=true)
-     * The working directory was `messages`.
-     * I got the `en-us.txt` as an output because we put the file name `en-us.txt` as an argument for the `ls` command. The command returns the name of the file if  a file was used as an argument
-     * It is not an error, it just confirms that in the current directory, such a file exists.
+* The working directory was `messages`.
+* I got the `en-us.txt` as an output because we put the file name `en-us.txt` as an argument for the `ls` command. The command returns the name of the file if  a file was used as an argument
+* It is not an error, it just confirms that in the current directory, such a file exists.
        
 ***
 
   9) ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-15%20at%203.06.32%20PM.png?raw=true)
-       * The working directory was `lecture1`.
-       * `To use this program:
-        javac Hello.java
-        java Hello messages/en-us.txt` was outputted because the `cat` command is used to read the content of files, so when a file was given as an argument, `cat` printed the contents of the `README` file. 
-       * It is not an error. 
+* The working directory was `lecture1`.
+*  `To use this program:
+    javac Hello.java
+    java Hello messages/en-us.txt` was outputted because the `cat` command is used to read the content of files, so when a file was given as an argument, `cat` printed the contents of the `README` file. 
+* It is not an error. 
      
