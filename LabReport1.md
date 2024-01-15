@@ -8,7 +8,7 @@
      
  2) ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-12%20at%204.46.45%20PM.png?raw=true)
    * The working directory when the command was run was `home`.
-   * I got `lecture1` as an output because the `ls` lists the files and folders in the given path. Given, that we did not have an argument (did not specify the path) it showed the list of folders in the current directory, which is home.
+   * I got `lecture1` as an output because the `ls` lists the files and folders in the given path. Given, that we did not have an argument (did not specify the path) it showed the list of folders in the current directory, which is `home`.
    * It is not an error, that's how this command operates.
      
 ***
@@ -55,4 +55,10 @@
 
 ***
 
-  9) ![Image]()
+  9) ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-15%20at%203.06.32%20PM.png?raw=true)
+     * The working directory was `lecture1`.
+     * `To use this program:
+       javac Hello.java
+       java Hello messages/en-us.txt` was outputted because the `cat` command is used to read the content of files, so when a file was given as an argument, `cat` printed the contents of the `README` file. 
+     * It is not an error. 
+     
