@@ -43,7 +43,7 @@
 
   7) ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-15%20at%202.41.47%20PM.png?raw=true)
      * The working directory was `home`.
-     * `bash: cd: lecture1/messages/en-us.txt: Not a directory ` was an output because we provided a path to a file as an argument. The `cd` command is used to change directories and not files so the output is letting us know that it is an error. 
+     * `bash: cd: lecture1/messages/en-us.txt: Not a directory ` was an output because we provided a path to a file as an argument. The `cd` command is used to change directories and not files so the output is letting us know that it is an error.
      * It is an error, as we provided a file path instead of a directory.
 
 ***
