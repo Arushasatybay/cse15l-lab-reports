@@ -1,7 +1,7 @@
 # Lab Report 1
 1) ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-11%20at%202.22.52%20PM.png?raw=true)
    * The working directory when the command was run was `/home/lecture1`.
-   * I got nothing as an output because the command `cd`  is used to change the current directory to the one provided, and given we gave no argument to `cd` it automatically changed to the user's home directory and started a new prompt. 
+   * I got no output because the command `cd`  is used to change the current directory to the one provided, and given we gave no argument to `cd` it automatically changed to the user's home directory and started a new prompt. 
    * It is not an error, it is a default behavior. 
      
 ***
@@ -22,7 +22,7 @@
 
  4) ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-13%20at%202.02.52%20PM.png?raw=true)
    * The working directory was `/home`.
-   * I got nothing as an output because the command `cd` is used to change the current directory `home` to a newly provided `lecture1/messages/`. No output with this command just confirms that the change of directory was successful. And a new prompt `[user@sahara ~/lecture1/messages]$` shows that we are now in the `messages` directory. 
+   * I got no output because the command `cd` is used to change the current directory `home` to a newly provided `lecture1/messages/`. No output with this command just confirms that the change of directory was successful. And a new prompt `[user@sahara ~/lecture1/messages]$` shows that we are now in the `messages` directory. 
    * It is not an error due to the reasons provided above.
      
 ***
