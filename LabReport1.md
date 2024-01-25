@@ -22,7 +22,7 @@
 
  4) ![Image](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-13%20at%202.02.52%20PM.png?raw=true)
    * The working directory was `/home`.
-   * I got a `[user@sahara ~/lecture1/messages]$` as an output because the command cd is used to change the current directory `home` to a newly provided `lecture1/messages/`. This output just confirms that we are now in the `messages` directory. 
+   * I got nothing as an output because the command `cd` is used to change the current directory `home` to a newly provided `lecture1/messages/`. No output with this command just confirms that the change of directory was successful. And a new prompt `[user@sahara ~/lecture1/messages]$` shows that we are now in the `messages` directory. 
    * It is not an error due to the reasons provided above.
      
 ***
