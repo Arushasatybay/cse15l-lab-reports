@@ -32,5 +32,5 @@
 
 
 ## Part 3
-In weeks 2 and 3 I have learned how to connect, build, and run a server. I also learned how to use `PrairieTest` platform for `SkillDemos` and found out about new commands such as `mkdir`, `scp`, and `man`.
+In weeks 2 and 3 I have learned how to connect, build, and run a server. I also learned how to use the `PrairieTest` platform for `SkillDemos` and found out about new commands such as `mkdir`, `scp`, and `man`.
  
