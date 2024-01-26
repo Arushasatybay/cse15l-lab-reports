@@ -25,4 +25,12 @@
  > *  The `handleRequest` method is called when using `/add-message?s=How was your day?&user=Aru`.
  > *  The relevant argument to this method is the `/add-message?s=How was your day?&user=Aru`. The `message` field is set to `How was your day`, the `user` field is set to `Aru`, and the value of ArrayList `wr` is now `Aru: Hello\n` `Aru: How was your day?\n`.
  > *  The value of the ArrayList `wr` changed from `"Aru: Hello"` to `Aru: Hello\n` `Aru: How was your day?\n` after yet another execution of the `handleRequest` method.
+
+
+## Part 2
+* ![Login](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-26%20at%203.40.09%20PM.png?raw=true)
+
+
+## Part 3
+In weeks 2 and 3 I have learned how to connect, build, and run a server. I also learned how to use `PrairieTest` platform for `SkillDemos` and found out about new commands such as `mkdir`, `scp`, and `man`.
  
