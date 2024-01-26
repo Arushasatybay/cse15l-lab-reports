@@ -14,6 +14,7 @@
 > * However, the provided code would return Strings like "How are you" as "How+are+you+". So I asked ChatGpt to solve the issue in the code, and it modified this portion of the code:
  >![ChatGPTmoddified](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-26%20at%202.10.58%20PM.png?raw=true)
 
+---
 
  ![Webscreenshot](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-25%20at%205.14.48%20PM.png?raw=true)
  ![Webscreenshot](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-25%20at%205.15.48%20PM.png?raw=true)
