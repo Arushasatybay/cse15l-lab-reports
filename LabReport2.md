@@ -17,10 +17,12 @@
 ---
 Output:
  ![Webscreenshot](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-25%20at%205.14.48%20PM.png?raw=true)
- * The `handleRequest` method is called when using `/add-message?s=Hello&user=Aru`.
- * The relevant argument to this method is the `URL`: `/add-message?s=Hello&user=Aru`. The `message` field is set to `Hello`, the `user` field is set to `Aru`, and the value of ArrayList `wr` is now `"Aru: Hello"`
- * The value of the ArrayList `wr` changed from `null` to `"Aru: Hello"` after the execution of the `handleRequest` method since the user and message parameters were extracted from the provided URL and formed a `chatMessage` which was added to the ArrayList `wr`.
+ > * The `handleRequest` method is called when using `/add-message?s=Hello&user=Aru`.
+ > * The relevant argument to this method is the `URL`: `/add-message?s=Hello&user=Aru`. The `message` field is set to `Hello`, the `user` field is set to `Aru`, and the value of ArrayList `wr` is now `Aru: Hello\n`
+ > * The value of the ArrayList `wr` changed from `null` to `Aru: Hello\n` after the execution of the `handleRequest` method since the user and message parameters were extracted from the provided URL and formed a `chatMessage` which was added to the ArrayList `wr`.
    
  ![Webscreenshot](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-25%20at%205.15.48%20PM.png?raw=true)
- *  The `handleRequest` method is called when using `/add-message?s=How are you?&user=Aru`.
+ > *  The `handleRequest` method is called when using `/add-message?s=How was your day?&user=Aru`.
+ > *  The relevant argument to this method is the `/add-message?s=How was your day?&user=Aru`. The `message` field is set to `How was your day`, the `user` field is set to `Aru`, and the value of ArrayList `wr` is now `Aru: Hello\n` `Aru: How was your day?\n`.
+ > *  The value of the ArrayList `wr` changed from `"Aru: Hello"` to `Aru: Hello\n` `Aru: How was your day?\n` after yet another execution of the `handleRequest` method.
  
