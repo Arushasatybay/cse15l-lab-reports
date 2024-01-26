@@ -1,7 +1,7 @@
 # Lab Report 2
 ## Part 1
  
- `ChatServer` Code: 
+ `ChatServer` **Code:** 
  ![Code](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-25%20at%205.00.39%20PM.png?raw=true)
  ![Code](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-25%20at%205.10.29%20PM.png?raw=true)
 
@@ -15,7 +15,7 @@
  >![ChatGPTmoddified](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-26%20at%202.10.58%20PM.png?raw=true)
 
 ---
-Output:
+**Output:**
  ![Webscreenshot](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-25%20at%205.14.48%20PM.png?raw=true)
  > * The `handleRequest` method is called when using `/add-message?s=Hello&user=Aru`.
  > * The relevant argument to this method is the `URL`: `/add-message?s=Hello&user=Aru`. The `message` field is set to `Hello`, the `user` field is set to `Aru`, and the value of ArrayList `wr` is now `Aru: Hello\n`
