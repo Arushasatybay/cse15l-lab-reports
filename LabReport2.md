@@ -8,6 +8,7 @@
 > * To write this code I used the lab2 setting with the code that my group made for lab2 "Make the Simplest “Search Engine”" part. This is the code that we had written with my group:
 > ![GroupCode](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-26%20at%2012.39.23%20PM.png?raw=true)
 > * Then I gave the above code to the copilot and asked to change it so it fits the lab requirements. And this was the code produced:
+>   
 > ![Copilot Code](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-26%20at%2012.45.04%20PM.png?raw=true)
 > * Afterwards, I changed the first return statement to fit the LabReport2 requirements better:
  ![ChangedReturn](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-26%20at%2012.48.02%20PM.png?raw=true)
