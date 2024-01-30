@@ -28,10 +28,12 @@
 
 
 ## Part 2
-The absolute path to the public key
+  The absolute path to the public key
 * ![Public](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-30%20at%2011.31.07%20AM.png?raw=true)
-The absolute path to the private key
+
+  The absolute path to the private key
 * ![Private](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-30%20at%2011.32.06%20AM.png?raw=true)
+  
 * ![Login](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-01-26%20at%203.40.09%20PM.png?raw=true)
 
 
