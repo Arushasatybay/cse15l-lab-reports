@@ -30,5 +30,7 @@ public class ArrayTests {
 }
 ```
 ### The symptom:
+![Screenshot](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-02-10%20at%206.06.43%20PM.png?raw=true)
+
 ### The bug:
 
