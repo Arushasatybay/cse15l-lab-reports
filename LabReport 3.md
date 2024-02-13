@@ -82,14 +82,14 @@ public class ArrayExamples {
 
 
 ## Part 2 Researching Grep Command
-1. a) **grep -i** on a directory:
+1. a) **grep -i**:
    ```
-   (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -i "water" ./technical/
-   grep: ./technical/: Is a directory
+   base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -i "kofi" ./technical/plos/*.txt
+   ./technical/plos/journal.pbio.0020001.txt:        Kofi Annan, the Secretary-General of the United Nations, recently called attention to
    ```
-   * This command searches for a specific pattern, in this case: "water", case-insensitively. However, it cannot be used on directories so this output is given.
+   * This command searches for a specific pattern, in this case: "kofi", case-insensitively. It is useful for fast word and pattern finding.
 
-   b) **grep -i** on a file:
+   b) **grep -i**:
    ```
    (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -i "older" ./technical/biomed/1468-6708-3-1.txt
         Older adults are frequently counseled to lose weight,
@@ -117,14 +117,74 @@ public class ArrayExamples {
    ```
    * This command, when applied to a file, scans for a pattern, in this case, the word "older," and outputs only the lines that contain the target word regardless of the case. This case-insensitive search is highly efficient for word searches. `grep -i`  searches not only for words but patterns which enables a more complex search.
 
-2. a) **grep -n** on a directory:
+2. a) **grep -n**:
 ```
-(base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -n "med" ./technical/
-grep: ./technical/: Is a directory
+(base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -n "objective" ./technical/government/Env_Prot_Agen/*.txt
+./technical/government/Env_Prot_Agen/1-3_meth_901.txt:9:The objective of aquatic toxicity tests with effluents or
+./technical/government/Env_Prot_Agen/1-3_meth_901.txt:253:permit requirements, the objectives of the test, the available
+./technical/government/Env_Prot_Agen/atx1-6.txt:109:permit requirements, the objectives of the test, the available
+./technical/government/Env_Prot_Agen/atx1-6.txt:518:objectives; (3) preparation of written descriptions of laboratory
+./technical/government/Env_Prot_Agen/atx1-6.txt:599:on the objectives of the study and logistical constraints, as
+./technical/government/Env_Prot_Agen/atx1-6.txt:757:objectives of the tests (see test condition summaries). The
+./technical/government/Env_Prot_Agen/atx1-6.txt:819:objectives of the test and the statistical method used for analysis
+./technical/government/Env_Prot_Agen/atx1-6.txt:1232:objective of the test.
+./technical/government/Env_Prot_Agen/atx1-6.txt:1740:of the regulatory authority and the objectives of the test. It is
+./technical/government/Env_Prot_Agen/ctf1-6.txt:167:The objective of aquatic toxicity tests with effluents or
+./technical/government/Env_Prot_Agen/ctf1-6.txt:377:permit requirements, the objectives of the test, the available
+./technical/government/Env_Prot_Agen/ctf1-6.txt:727:objectives (DQOs); (3) prepare a written description of laboratory
+./technical/government/Env_Prot_Agen/ctf1-6.txt:813:on the objectives of the study and logistical constraints, as
+./technical/government/Env_Prot_Agen/ctf1-6.txt:815:performed to meet NPDES objectives, synthetic, moderately hard
+./technical/government/Env_Prot_Agen/ctf1-6.txt:993:objectives of the tests (see test condition summaries). The
+./technical/government/Env_Prot_Agen/ctf1-6.txt:1053:of replicates varies with the objectives of the test and the
+./technical/government/Env_Prot_Agen/ctf1-6.txt:1365:objective of the test.
+./technical/government/Env_Prot_Agen/ctf1-6.txt:1771:requirements of the regulatory authority and the objectives of the
+./technical/government/Env_Prot_Agen/ctf7-10.txt:8:tests will depend largely on the objectives of the study.
+./technical/government/Env_Prot_Agen/ctf7-10.txt:12:If the objective of the test is to estimate the absolute
+./technical/government/Env_Prot_Agen/ctf7-10.txt:21:If the objective of the test is to estimate the chronic
+./technical/government/Env_Prot_Agen/ctf7-10.txt:39:If the objective of the test is to determine the additive
+./technical/government/Env_Prot_Agen/ctf7-10.txt:49:for the objectives of the test; supports adequate performance of
+./technical/government/Env_Prot_Agen/ctf7-10.txt:238:If the objectives of the test require the use of
+./technical/government/Env_Prot_Agen/ctf7-10.txt:339:samples is based on the objectives of the test and an understanding
+./technical/government/Env_Prot_Agen/ctf7-10.txt:482:The sampling point is determined by the objectives of the
+./technical/government/Env_Prot_Agen/ctf7-10.txt:845:independently for each test based on the objective of the study,
+./technical/government/Env_Prot_Agen/ctf7-10.txt:892:In cases where the objective of the test is to estimate
+./technical/government/Env_Prot_Agen/ctf7-10.txt:903:9.1.1 The objective of chronic aquatic toxicity tests with
+./technical/government/Env_Prot_Agen/ctf7-10.txt:985:9.2.1 If the objective of chronic aquatic toxicity tests with
+./technical/government/Env_Prot_Agen/ctf7-10.txt:1280:replicates, and should be based on the objectives for obtaining the
+./technical/government/Env_Prot_Agen/ctf7-10.txt:2068:depending on the degree of the departure and the objective of the
+./technical/government/Env_Prot_Agen/ctf7-10.txt:2189:toxicant test, and the objective of the test. More frequent and/or
+./technical/government/Env_Prot_Agen/ctf7-10.txt:2222:quality objectives and quality assurance plan.
+./technical/government/Env_Prot_Agen/ctm4-10.txt:17:objectives (DQOs), (3) prepare written descriptions of laboratory
+./technical/government/Env_Prot_Agen/ctm4-10.txt:104:objectives of the study and logistical constraints, as discussed in
+./technical/government/Env_Prot_Agen/ctm4-10.txt:304:objectives of the tests (see test conditions and test acceptability
+./technical/government/Env_Prot_Agen/ctm4-10.txt:365:of replicates varies with the objectives of the test and the
+./technical/government/Env_Prot_Agen/ctm4-10.txt:679:reference toxicant test, and the objective of the test.
+./technical/government/Env_Prot_Agen/ctm4-10.txt:1003:requirements of the regulatory authority and the objectives of the
+./technical/government/Env_Prot_Agen/ctm4-10.txt:1376:will depend largely on the objectives of the study.
+./technical/government/Env_Prot_Agen/ctm4-10.txt:1380:If the objective of the test is to estimate the absolute
+./technical/government/Env_Prot_Agen/ctm4-10.txt:1389:If the objective of the test is to estimate the chronic
+./technical/government/Env_Prot_Agen/ctm4-10.txt:1405:If the objective of the test is to determine the additive
+./technical/government/Env_Prot_Agen/ctm4-10.txt:1415:for the objectives of the test; supports adequate performance of
+./technical/government/Env_Prot_Agen/ctm4-10.txt:1572:If the objectives of the test require the use of
+./technical/government/Env_Prot_Agen/ctm4-10.txt:1758:samples is based on the objectives of the test and an understanding
+./technical/government/Env_Prot_Agen/ctm4-10.txt:1899:The sampling point is determined by the objectives of the
+./technical/government/Env_Prot_Agen/ctm4-10.txt:2081:objectives of the study using hypersaline brine or artificial sea
+./technical/government/Env_Prot_Agen/ctm4-10.txt:2264:independently for each test based on the objective of the study,
+./technical/government/Env_Prot_Agen/ctm4-10.txt:2312:In cases where the objective of the test is to estimate
+./technical/government/Env_Prot_Agen/ctm4-10.txt:2323:9.1.1 The objective of chronic aquatic toxicity tests with
+./technical/government/Env_Prot_Agen/ctm4-10.txt:2407:9.2.1 If the objective of chronic aquatic toxicity tests with
+./technical/government/Env_Prot_Agen/ctm4-10.txt:2694:replicates, and should be based on the objectives for obtaining the
+./technical/government/Env_Prot_Agen/ctm4-10.txt:3501:depending on the degree of the departure and the objective of the
+./technical/government/Env_Prot_Agen/ctm4-10.txt:3622:toxicant test, and the objective of the test. More frequent and/or
+./technical/government/Env_Prot_Agen/ctm4-10.txt:3654:requirements of any applicable data quality objectives and quality
+./technical/government/Env_Prot_Agen/final.txt:85:The objective was for sources to find the most cost-effective means
+./technical/government/Env_Prot_Agen/multi102902.txt:2653:demand for work at power plants, the union has made it an objective
+./technical/government/Env_Prot_Agen/nov1.txt:363:structured to ensure consistency with the NEP objectives. The NEP
+./technical/government/Env_Prot_Agen/ro_clear_skies_book.txt:17:priorities. This progressive plan shows how that objective can be
 ```
-* This command searches for specific patterns and outputs lines with that pattern as well as states the line number. However, it cannot be used on directories which is why we see this output.
+* In this command "each output line is preceded by its relative line number in the file, starting at line 1.  The line number counter is reset for each file processed"(man command information). It might be very useful for finding typos and errors and fixing them because it provides the line number too.
 
-   b) **grep -n** on a file:
+   b) **grep -n**:
   ```
   (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -n "man" ./technical/911report/chapter-2.txt 
    7:                physician, Ayman al Zawahiri, arranged from their Afghan headquarters for an Arabic
@@ -167,7 +227,7 @@ grep: ./technical/: Is a directory
   ```
   *This command searches for a specific pattern and outputs lines with that pattern as well as states the line number. The command is very useful for locating the pattern occurrences and I assume might be very helpful for debugging, given it outputs the line number.
 
-3. a) **grep -r*** on a directory:
+3. a) **grep -r***:
    ```
    (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -r "United Nations" ./technical/
    ./technical//government/Gen_Account_Office/Testimony_d01609t.txt:community has not provided the resources that the United Nations
