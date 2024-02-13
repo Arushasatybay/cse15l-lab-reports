@@ -82,14 +82,14 @@ public class ArrayExamples {
 
 
 ## Part 2 Researching Grep Command
-1. **grep -i** on a directory:
+1. a) **grep -i** on a directory:
    ```
    (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -i "water" ./technical/
    grep: ./technical/: Is a directory
    ```
    * This command searches for a specific pattern, in this case: "water", case-insensitively. However, it cannot be used on directories so this output is given.
 
-   **grep -i** on a file:
+   b) **grep -i** on a file:
    ```
    (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -i "older" ./technical/biomed/1468-6708-3-1.txt
         Older adults are frequently counseled to lose weight,
@@ -116,6 +116,93 @@ public class ArrayExamples {
         that address older adults who are merely overweight.
    ```
    * This command, when applied to a file, scans for a pattern, in this case, the word "older," and outputs only the lines that contain the target word regardless of the case. This case-insensitive search is highly efficient for word searches. `grep -i`  searches not only for words but patterns which enables a more complex search.
+
+2. a) **grep -n** on a directory:
+```
+(base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -n "med" ./technical/
+grep: ./technical/: Is a directory
+```
+* This command searches for specific patterns and outputs lines with that pattern as well as states the line number. However, it cannot be used on directories which is why we see this output.
+
+   b) **grep -n** on a file:
+  ```
+  (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -n "man" ./technical/911report/chapter-2.txt 
+   7:                physician, Ayman al Zawahiri, arranged from their Afghan headquarters for an Arabic
+   67:                his message are largely unknown to many Americans. Seizing on symbols of Islam's
+   83:                from Abraham through Jesus, complete God's message to humanity. The Hadith, which
+   95:                institution that continued until 1924, first under Arab and eventually under Ottoman
+   103:            Islam is both a faith and a code of conduct for all aspects of life. For many
+   147:                Prophet Mohammed). Qutb argued that humans can choose only between Islam and
+   175:                of mankind." If the United States did not comply, it would be at war with the
+   212:                local Islamist movements by ceding control of many social and educational issues.
+   217:                many into exile. In Pakistan, a military regime sought to justify its seizure of
+   235:                1980s, diminishing oil revenues, the economic drain from many unprofitable
+   251:                the West. Furthermore, the repression and isolation of women in many Muslim
+   265:                humanities and social sciences. Many of these young men, even if able to study
+   274:                they disagree. Beyond the theology lies the simple human fact that most Muslims,
+   275:                like most other human beings, are repelled by mass murder and barbarism whatever
+   312:                appeared to be ungainly but was in fact quite athletic, skilled as a horseman,
+   330:            Mosques, schools, and boardinghouses served as recruiting stations in many parts of
+   375:                Group, was the so-called Blind Sheikh, Omar Abdel Rahman. His preaching had inspired
+   377:                1980s, Abdel Rahman found refuge in the United States. From his headquarters in
+   380:            The most important Egyptian in Bin Ladin's circle was a surgeon, Ayman al Zawahiri,
+   383:                many to think of him as the deputy head of al Qaeda. He would in fact become Bin
+   404:                member of the royal family, he managed to get out of the country under the pretext
+   439:                Lebanon, Iraq, Oman, Algeria, Libya, Tunisia, Morocco, Somalia, and Eritrea. Al
+   450:                    commanders.
+   484:                border region. Still, he was just one among many diverse terrorist barons. Some of
+   506:                fatwa demanding their eviction. In December, bombs exploded at two hotels in Aden
+   621:                government advised him that it intended to yield to Libya's demands to stop giving
+   633:                financial manager, whom his followers saw as miserly.
+   642:                informant for the United States. Also testifying about al Qaeda in a U.S. court was
+   725:                maintained collaborative relationships with al Qaeda, but many disengaged
+   809:            Al Qaeda continued meanwhile to collaborate closely with the many Middle Eastern
+   819:                fund-raising network, Bin Ladin had again become the rich man of the jihad movement.
+   820:                He had maintained or restored many of his links with terrorists elsewhere in the
+   851:                committee chief, continued to be the operational commander of the cell; but because
+   853:                Fawwaz, to serve as the on-site manager. The technical surveillance and
+   855:                state-of-the-art video cameras obtained from China and from dealers in Germany. The
+   879:                searched the Kenya residence of Wadi al Hage, who had become the new on-site manager
+   884:                manager was taken over by Harun Fazul, a Kenyan citizen who had been in Bin Ladin's
+  ```
+  *This command searches for a specific pattern and outputs lines with that pattern as well as states the line number. The command is very useful for locating the pattern occurrences and I assume might be very helpful for debugging, given it outputs the line number.
+
+3. a) **grep -r*** on a directory:
+   ```
+   (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -r "United Nations" ./technical/
+   ./technical//government/Gen_Account_Office/Testimony_d01609t.txt:community has not provided the resources that the United Nations
+   ./technical//government/Gen_Account_Office/d03273g.txt:United Nations about $1.3 billion for the regular and peacekeeping
+   ./technical//government/Post_Rate_Comm/Cohenetal_RuralDelivery.txt:The United Nations has estimated that 27.5 percent of the
+   ./technical//government/Post_Rate_Comm/Cohenetal_RuralDelivery.txt:Report, The United Nations, Department of International Economic
+   ./technical//plos/pmed.0020067.txt:        Deworming satisfies a number of United Nations Millennium Development Goals including
+   ./technical//plos/pmed.0020016.txt:        In June 2001, heads of state and government convened a United Nations Special Session on
+   ./technical//plos/pmed.0020016.txt:        The World Health Organization and its partners in the Joint United Nations Programme on
+   ./technical//plos/pmed.0020016.txt:          Joint United Nations Programme on HIV/AIDS and the World Health Organization based on the
+   ./technical//plos/pmed.0010047.txt:        similar to the one used by the World Health Organization/United Nations Children's Fund
+   ./technical//plos/journal.pbio.0020310.txt:        Hough, principal technical advisor on biodiversity for the United Nations Development
+   ./technical//plos/journal.pbio.0020105.txt:        (OECD) and the United Nations' World Summit on the Information Society (WSIS), advocates
+   ./technical//plos/pmed.0020050.txt:        The World Health Organization and the Joint United Nations Programme on HIV/AIDS have
+   ./technical//plos/pmed.0020247.txt:        untiring advocate for justice for people with HIV/AIDS, addressed the United Nations
+   ./technical//plos/journal.pbio.0020001.txt:        Kofi Annan, the Secretary-General of the United Nations, recently called attention to
+   ./technical//plos/journal.pbio.0020001.txt:        challenges of building bridges across these gaps that should bring the United Nations and
+   ./technical//plos/journal.pbio.0020001.txt:        Goldemberg 1998; Riddoch 2000). For example, recent United Nations Educational, Scientific,
+   ./technical//plos/journal.pbio.0020161.txt:        Mayor, former director general of the United Nations Educational, Scientific, and Cultural
+   ./technical//911report/chapter-13.5.txt:                For the report, see United Nations Development Programme report, Arab Human
+   ./technical//911report/chapter-13.5.txt:                Development Report 2003: Building a Knowledge Society (United Nations, 2003) (online
+   ./technical//911report/chapter-13.5.txt:            30. For terrorists being self-funding, see United Nations report, "Second Report of
+   ./technical//911report/chapter-13.3.txt:            16. See Arab Human Development Report 2003 (United Nations, 2003), a report prepared
+   ./technical//911report/chapter-3.txt:                U.S. ambassador to the United Nations, Bill Richardson, led a delegation to South
+   ./technical//911report/chapter-3.txt:                with Albright when she was ambassador to the United Nations and had served on the
+   ./technical//911report/chapter-3.txt:                support from Bin Ladin), the United States persuaded the United Nations to adopt
+   ./technical//911report/chapter-6.txt:                    the United Nations and foreign governments to raise global security standards
+   ./technical//911report/chapter-12.txt:                    United Nations to these enterprises are weak. NATO member states are not
+   ./technical//911report/chapter-12.txt:                The United Nations has rightly equated "literacy as freedom."
+   ./technical//911report/chapter-12.txt:                money, in the United States and through resolutions of the United Nations. These
+   ./technical//911report/chapter-12.txt:                United States and the United Nations were often forced to unfreeze assets.
+   ```
+* This command
+
+
      
 
 
