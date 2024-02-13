@@ -260,7 +260,7 @@ public class ArrayExamples {
    ./technical//911report/chapter-12.txt:                money, in the United States and through resolutions of the United Nations. These
    ./technical//911report/chapter-12.txt:                United States and the United Nations were often forced to unfreeze assets.
    ```
-* This command
+* This command "recursively search subdirectories listed"(man command information). It is useful because it searches for a specific pattern within all files in the provided directory.
 
 
      
