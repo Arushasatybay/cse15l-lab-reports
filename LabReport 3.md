@@ -264,7 +264,7 @@ public class ArrayExamples {
 
   b) **grep -R**:
   
-    ```
+   ```
    (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -R "Boston" ./technical/911report/*.txt
   ./technical/911report/chapter-1.txt:    Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight from Portland to Boston's Logan International Airport.
    ./technical/911report/chapter-1.txt:    When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted Passenger Prescreening System), created to identify passengers who should be subject to special security measures. Under security rules in place at the time, the only consequence of Atta's selection by CAPPS was that his checked bags were held off the plane until it was confirmed that he had boarded the aircraft. This did not hinder Atta's plans.
@@ -273,11 +273,11 @@ public class ArrayExamples {
    ./technical/911report/chapter-1.txt:    Washington Dulles: American 77. Hundreds of miles southwest of Boston, at Dulles International Airport in the Virginia suburbs of Washington, D.C., five more men were preparing to take their early morning flight. At 7:15, a pair of them, Khalid al Mihdhar and Majed Moqed, checked in at the American Airlines ticket counter for Flight 77, bound for Los Angeles. Within the next 20 minutes, they would be followed by Hani Hanjour and two brothers, Nawaf al Hazmi and Salem al Hazmi.
    ./technical/911report/chapter-1.txt:    The four men passed through the security checkpoint, owned by United Airlines and operated under contract by Argenbright Security. Like the checkpoints in Boston, it lacked closed-circuit television surveillance so there is no documentary evidence to indicate when the hijackers passed through the checkpoint, what alarms may have been triggered, or what security procedures were administered. The FAA interviewed the screeners later; none recalled anything unusual or suspicious.
     ... note 69 lines omitted ...
-  ```
+   ```
 * This command is the same as `grep -r` but because we specified `-R`, it will also show all symbolic links. However, in the above-provided text files, we can see no symbolic links were detected. "Symbolic links are commonly used to create shortcuts or aliases to files or directories, allowing for convenient access or organization within a file system"(ChatGPT Prompt: what are symbolic links used for)
 
-  4. a) **grep -w**:
-   
+    4. a) **grep -w**:
+  
      ```
      (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -w "an" ./technical/government/Alcohol_Problems/Session3-PDF.txt 
      Excessive alcohol consumption plays an important role in many of
