@@ -228,7 +228,7 @@ public class ArrayExamples {
 
   * This command searches for a specific pattern and outputs lines with that pattern as well as states the line number. The command is very useful for locating the pattern   occurrences and I assume might be very helpful for debugging, given it outputs the line number.
 
-3.  a) **grep -r**:
+ 3.  a) **grep -r**:
    ```
    (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -r "United Nations" ./technical/
    ./technical//government/Gen_Account_Office/Testimony_d01609t.txt:community has not provided the resources that the United Nations
