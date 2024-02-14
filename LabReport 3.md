@@ -225,7 +225,6 @@ public class ArrayExamples {
    879:                searched the Kenya residence of Wadi al Hage, who had become the new on-site manager
    884:                manager was taken over by Harun Fazul, a Kenyan citizen who had been in Bin Ladin's
   ```
-
   * This command searches for a specific pattern and outputs lines with that pattern as well as states the line number. The command is very useful for locating the pattern   occurrences and I assume might be very helpful for debugging, given it outputs the line number.
 
 5. **grep -r**:
@@ -261,11 +260,9 @@ public class ArrayExamples {
    ./technical//911report/chapter-12.txt:                money, in the United States and through resolutions of the United Nations. These
    ./technical//911report/chapter-12.txt:                United States and the United Nations were often forced to unfreeze assets.
    ```
- * This command "recursively search subdirectories listed"(`man` command information). It is useful because it searches for a specific pattern within all files in the 
-     provided directory.
+   * This command "recursively search subdirectories listed"(`man` command information). It is useful because it searches for a specific pattern within all files in the provided directory.
    
 6.  **grep -R**:
-  
      ```
     (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -R "Boston" ./technical/911report/*.txt
     ./technical/911report/chapter-1.txt:    Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight from Portland to Boston's Logan International Airport.
@@ -348,6 +345,7 @@ public class ArrayExamples {
      ```
 
 * In this command "the expression is searched for as a word"(man command information). therefore, when we are asking to find `an` it is actually trying to find all the instances of the word `an` in the text. So in this example, the word `and` would not be a match although it contains those letters. It is useful for a more specified search.
+  
 8. **grep -w**:
   ```
   (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -wi "preventive" ./technical/government/Alcohol_Problems/Session4-PDF.txt 
