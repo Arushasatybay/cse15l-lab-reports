@@ -82,14 +82,14 @@ public class ArrayExamples {
 
 
 ## Part 2 Researching Grep Command
-1. a) **grep -i**:
+1. **grep -i**:
    ```
    base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -i "kofi" ./technical/plos/*.txt
    ./technical/plos/journal.pbio.0020001.txt:        Kofi Annan, the Secretary-General of the United Nations, recently called attention to
    ```
    * This command searches for a specific pattern, in this case: "kofi", case-insensitively. It is useful for fast word and pattern finding.
 
-   b) **grep -i**:
+2. **grep -i**:
    ```
    (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -i "older" ./technical/biomed/1468-6708-3-1.txt
         Older adults are frequently counseled to lose weight,
@@ -116,8 +116,8 @@ public class ArrayExamples {
         that address older adults who are merely overweight.
    ```
    * This command, when applied to a file, scans for a pattern, in this case, the word "older," and outputs only the lines that contain the target word regardless of the case. This case-insensitive search is highly efficient for word searches. `grep -i`  searches not only for words but patterns which enables a more complex search.
-
-2. a) **grep -n**:
+     
+3. **grep -n**:
 ```
 (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -n "objective" ./technical/government/Env_Prot_Agen/*.txt
 ./technical/government/Env_Prot_Agen/1-3_meth_901.txt:9:The objective of aquatic toxicity tests with effluents or
@@ -184,7 +184,7 @@ public class ArrayExamples {
 ```
 * In this command "each output line is preceded by its relative line number in the file, starting at line 1.  The line number counter is reset for each file processed"(`man` command information). It might be very useful for finding typos and errors and fixing them because it provides the line number too.
 
-   b) **grep -n**:
+4. **grep -n**:
   ```
   (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -n "man" ./technical/911report/chapter-2.txt 
    7:                physician, Ayman al Zawahiri, arranged from their Afghan headquarters for an Arabic
@@ -228,7 +228,7 @@ public class ArrayExamples {
 
   * This command searches for a specific pattern and outputs lines with that pattern as well as states the line number. The command is very useful for locating the pattern   occurrences and I assume might be very helpful for debugging, given it outputs the line number.
 
- 3.  a) **grep -r**:
+5. **grep -r**:
    ```
    (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -r "United Nations" ./technical/
    ./technical//government/Gen_Account_Office/Testimony_d01609t.txt:community has not provided the resources that the United Nations
@@ -263,7 +263,8 @@ public class ArrayExamples {
    ```
  * This command "recursively search subdirectories listed"(`man` command information). It is useful because it searches for a specific pattern within all files in the 
      provided directory.
-    b) **grep -R**:
+   
+6.  **grep -R**:
   
      ```
     (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -R "Boston" ./technical/911report/*.txt
@@ -277,7 +278,7 @@ public class ArrayExamples {
     ```
 * This command is the same as `grep -r` but because we specified `-R`, it will also show all symbolic links. However, in the above-provided text files, we can see no symbolic links were detected. "Symbolic links are commonly used to create shortcuts or aliases to files or directories, allowing for convenient access or organization within a file system"(`ChatGPT` Prompt: what are symbolic links used for)
 
-4. a) **grep -w**:
+7. **grep -w**:
   
      ```
      (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -w "an" ./technical/government/Alcohol_Problems/Session3-PDF.txt 
@@ -349,7 +350,7 @@ public class ArrayExamples {
      
 * In this command "the expression is searched for as a word"(man command information). therefore, when we are asking to find `an` it is actually trying to find all the instances of the word `an` in the text. So in this example, the word `and` would not be a match although it contains those letters. It is useful for a more specified search.
 
-  b) **grep -w**:
+8. **grep -w**:
   ```
   (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -wi "preventive" ./technical/government/Alcohol_Problems/Session4-PDF.txt 
   Implementing Preventive Interventions in
