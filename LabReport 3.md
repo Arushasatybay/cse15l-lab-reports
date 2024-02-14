@@ -227,7 +227,7 @@ public class ArrayExamples {
   ```
   *This command searches for a specific pattern and outputs lines with that pattern as well as states the line number. The command is very useful for locating the pattern occurrences and I assume might be very helpful for debugging, given it outputs the line number.
 
-3. a) **grep -r***:
+3. a) **grep -r**:
    ```
    (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -r "United Nations" ./technical/
    ./technical//government/Gen_Account_Office/Testimony_d01609t.txt:community has not provided the resources that the United Nations
@@ -262,7 +262,7 @@ public class ArrayExamples {
    ```
 * This command "recursively search subdirectories listed"(man command information). It is useful because it searches for a specific pattern within all files in the provided directory.
 
-  b)**grep -R***:
+  b) **grep -R**:
   ```
   (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -R "Boston" ./technical/911report/*.txt
   ./technical/911report/chapter-1.txt:    Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight from Portland to Boston's Logan International Airport.
@@ -275,7 +275,7 @@ public class ArrayExamples {
   ```
 * This command is the same as `grep -r` but because we specified `-R`, it will also show all symbolic links. However, in the above-provided text files, we can see no symbolic links were detected. "Symbolic links are commonly used to create shortcuts or aliases to files or directories, allowing for convenient access or organization within a file system"(ChatGPT Prompt: what are symbolic links used for)
 
-4. a)**grep -w**:
+4.  a) **grep -w**:
    ```
    (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -w "an" ./technical/government/Alcohol_Problems/Session3-PDF.txt 
    Excessive alcohol consumption plays an important role in many of
@@ -344,16 +344,16 @@ public class ArrayExamples {
    ```
 * In this command "the expression is searched for as a word"(man command information). therefore, when we are asking to find `an` it is actually trying to find all the instances of the word `an` in the text. So in this example, the word `and` would not be a match although it contains those letters. It is useful for a more specified search.
 
- b) **grep -w**:
- ```
-(base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -wi "preventive" ./technical/government/Alcohol_Problems/Session4-PDF.txt 
-Implementing Preventive Interventions in
-ED-based intervention to increase acess to primary care, preventive
-Comments on Implementing Preventive Interventions in Emergency
-providing preventive services. The Society for Academic Emergency
-putting clinical preventive services into practice. He reasoned we
-(base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ 
- ```
+  b) **grep -w**:
+  ```
+  (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -wi "preventive" ./technical/government/Alcohol_Problems/Session4-PDF.txt 
+  Implementing Preventive Interventions in
+  ED-based intervention to increase acess to primary care, preventive
+  Comments on Implementing Preventive Interventions in Emergency
+  providing preventive services. The Society for Academic Emergency
+  putting clinical preventive services into practice. He reasoned we
+  (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ 
+  ```
 * We can add two commands we learned for a more precise search. So `grep -w` still is searching for a whole word but by adding `i` to it we make it search case-insensitively. This allows some flexibility in our search. 
      
 
