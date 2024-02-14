@@ -276,6 +276,7 @@ public class ArrayExamples {
 * This command is the same as `grep -r` but because we specified `-R`, it will also show all symbolic links. However, in the above-provided text files, we can see no symbolic links were detected. "Symbolic links are commonly used to create shortcuts or aliases to files or directories, allowing for convenient access or organization within a file system"(`ChatGPT` Prompt: what are symbolic links used for)
 
 7. **grep -w**:
+   
      ```
      (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -w "an" ./technical/government/Alcohol_Problems/Session3-PDF.txt 
      Excessive alcohol consumption plays an important role in many of
