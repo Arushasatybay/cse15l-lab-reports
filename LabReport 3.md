@@ -360,6 +360,10 @@ public class ArrayExamples {
   (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ 
   ```
 * We can add two commands we learned for a more precise search. So `grep -w` still is searching for a whole word but by adding `i` to it we make it search case-insensitively. This allows some flexibility in our search. 
-     
+
+
+# Work Cited
+* `man` command
+* `ChatGPT`
 
 
