@@ -275,8 +275,7 @@ public class ArrayExamples {
     ... note 69 lines omitted ...
   ```
 * This command is the same as `grep -r` but because we specified `-R`, it will also show all symbolic links. However, in the above-provided text files, we can see no symbolic links were detected. "Symbolic links are commonly used to create shortcuts or aliases to files or directories, allowing for convenient access or organization within a file system"(ChatGPT Prompt: what are symbolic links used for)
-
-4.  a) **grep -w**:
+4. a) **grep -w**:
    
      ```
      (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -w "an" ./technical/government/Alcohol_Problems/Session3-PDF.txt 
@@ -344,6 +343,8 @@ public class ArrayExamples {
      influence spontaneous remission such as an injury, type and
      patients do not present with an injury. He wondered how much of
      ```
+
+     
 * In this command "the expression is searched for as a word"(man command information). therefore, when we are asking to find `an` it is actually trying to find all the instances of the word `an` in the text. So in this example, the word `and` would not be a match although it contains those letters. It is useful for a more specified search.
 
   b) **grep -w**:
