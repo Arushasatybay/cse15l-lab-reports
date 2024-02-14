@@ -78,7 +78,7 @@ public class ArrayExamples {
 ```
 ![PassedTests](https://github.com/Arushasatybay/cse15l-lab-reports/blob/main/Screenshot%202024-02-10%20at%206.15.20%20PM.png?raw=true)
 
-* In the first code, we were assigning values of newArray to arr. However, every element of the newArray at that point is initialized to 0, so arr is not being reversed but rather assigned to new elements, which are 0. By assigning values of arr to newArray, and then returning the new reversed array, we are fixing the bug.
+* In the first code, we were assigning values of `newArray` to `arr`. However, every element of the `newArray` at that point is initialized to `0`, so `arr` is not being reversed but rather assigned to new elements, which are `0`. By assigning values of `arr` to `newArray`, and then returning the new reversed array, we are fixing the bug.
 
 
 ## Part 2 Researching Grep Command
