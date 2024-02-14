@@ -182,7 +182,7 @@ public class ArrayExamples {
 ./technical/government/Env_Prot_Agen/nov1.txt:363:structured to ensure consistency with the NEP objectives. The NEP
 ./technical/government/Env_Prot_Agen/ro_clear_skies_book.txt:17:priorities. This progressive plan shows how that objective can be
 ```
-* In this command "each output line is preceded by its relative line number in the file, starting at line 1.  The line number counter is reset for each file processed"(man command information). It might be very useful for finding typos and errors and fixing them because it provides the line number too.
+* In this command "each output line is preceded by its relative line number in the file, starting at line 1.  The line number counter is reset for each file processed"(`man` command information). It might be very useful for finding typos and errors and fixing them because it provides the line number too.
 
    b) **grep -n**:
   ```
@@ -261,7 +261,7 @@ public class ArrayExamples {
    ./technical//911report/chapter-12.txt:                United States and the United Nations were often forced to unfreeze assets.
    ```
 
- * This command "recursively search subdirectories listed"(man command information). It is useful because it searches for a specific pattern within all files in the 
+ * This command "recursively search subdirectories listed"(`man` command information). It is useful because it searches for a specific pattern within all files in the 
      provided directory.
     b) **grep -R**:
   
@@ -275,7 +275,7 @@ public class ArrayExamples {
     ./technical/911report/chapter-1.txt:    The four men passed through the security checkpoint, owned by United Airlines and operated under contract by Argenbright Security. Like the checkpoints in Boston, it lacked closed-circuit television surveillance so there is no documentary evidence to indicate when the hijackers passed through the checkpoint, what alarms may have been triggered, or what security procedures were administered. The FAA interviewed the screeners later; none recalled anything unusual or suspicious.
     ... note 69 lines omitted ...
     ```
-* This command is the same as `grep -r` but because we specified `-R`, it will also show all symbolic links. However, in the above-provided text files, we can see no symbolic links were detected. "Symbolic links are commonly used to create shortcuts or aliases to files or directories, allowing for convenient access or organization within a file system"(ChatGPT Prompt: what are symbolic links used for)
+* This command is the same as `grep -r` but because we specified `-R`, it will also show all symbolic links. However, in the above-provided text files, we can see no symbolic links were detected. "Symbolic links are commonly used to create shortcuts or aliases to files or directories, allowing for convenient access or organization within a file system"(`ChatGPT` Prompt: what are symbolic links used for)
 
 4. a) **grep -w**:
   
