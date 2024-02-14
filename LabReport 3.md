@@ -225,7 +225,8 @@ public class ArrayExamples {
    879:                searched the Kenya residence of Wadi al Hage, who had become the new on-site manager
    884:                manager was taken over by Harun Fazul, a Kenyan citizen who had been in Bin Ladin's
   ```
- * This command searches for a specific pattern and outputs lines with that pattern as well as states the line number. The command is very useful for locating the pattern   occurrences and I assume might be very helpful for debugging, given it outputs the line number.
+
+  * This command searches for a specific pattern and outputs lines with that pattern as well as states the line number. The command is very useful for locating the pattern   occurrences and I assume might be very helpful for debugging, given it outputs the line number.
 
 3.  a) **grep -r**:
    ```
