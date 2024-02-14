@@ -262,7 +262,99 @@ public class ArrayExamples {
    ```
 * This command "recursively search subdirectories listed"(man command information). It is useful because it searches for a specific pattern within all files in the provided directory.
 
+  b)**grep -R***:
+  ```
+  (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -R "Boston" ./technical/911report/*.txt
+  ./technical/911report/chapter-1.txt:    Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight from Portland to Boston's Logan International Airport.
+  ./technical/911report/chapter-1.txt:    When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted Passenger Prescreening System), created to identify passengers who should be subject to special security measures. Under security rules in place at the time, the only consequence of Atta's selection by CAPPS was that his checked bags were held off the plane until it was confirmed that he had boarded the aircraft. This did not hinder Atta's plans.
+  ./technical/911report/chapter-1.txt:    Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a call from Marwan al Shehhi, a longtime colleague who was at another terminal at Logan Airport. They spoke for three minutes.
+  ./technical/911report/chapter-1.txt:    While Atta had been selected by CAPPS in Portland, three members of his hijacking team-Suqami, Wail al Shehri, and Waleed al Shehri-were selected in Boston. Their selection affected only the handling of their checked bags, not their screening at the checkpoint. All five men cleared the checkpoint and made their way to the gate for American 11. Atta, Omari, and Suqami took their seats in business class (seats 8D, 8G, and 10B, respectively). The Shehri brothers had adjacent seats in row 2 (Wail in 2A, Waleed in 2B), in the firstclass cabin. They boarded American 11 between 7:31 and 7:40. The aircraft pushed back from the gate at 7:40.
+  ./technical/911report/chapter-1.txt:    Washington Dulles: American 77. Hundreds of miles southwest of Boston, at Dulles International Airport in the Virginia suburbs of Washington, D.C., five more men were preparing to take their early morning flight. At 7:15, a pair of them, Khalid al Mihdhar and Majed Moqed, checked in at the American Airlines ticket counter for Flight 77, bound for Los Angeles. Within the next 20 minutes, they would be followed by Hani Hanjour and two brothers, Nawaf al Hazmi and Salem al Hazmi.
+  ./technical/911report/chapter-1.txt:    The four men passed through the security checkpoint, owned by United Airlines and operated under contract by Argenbright Security. Like the checkpoints in Boston, it lacked closed-circuit television surveillance so there is no documentary evidence to indicate when the hijackers passed through the checkpoint, what alarms may have been triggered, or what security procedures were administered. The FAA interviewed the screeners later; none recalled anything unusual or suspicious.
+  ... note 69 lines omitted ...
+  ```
+* This command is the same as `grep -r` but because we specified `-R`, it will also show all symbolic links. However, in the above-provided text files, we can see no symbolic links were detected. "Symbolic links are commonly used to create shortcuts or aliases to files or directories, allowing for convenient access or organization within a file system"(ChatGPT Prompt: what are symbolic links used for)
 
+4. a)**grep -w***
+   ```
+   (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -w "an" ./technical/government/Alcohol_Problems/Session3-PDF.txt 
+   Excessive alcohol consumption plays an important role in many of
+   occasioned a call for an effective method of intervening with
+   The presence of an adverse consequence that can be linked to
+   medical problem; an automobile crash; unintentional injury; or
+   setting. In an emergency department (ED) study of injured crash
+   drinkers after their visit to an emergency setting. Several studies
+   emergency department seem to dissipate without an alcohol-specific
+   Re-injury and readmission to an emergency or other medical
+   intervention in an emergency department by alcohol health workers
+   a follow-up study, were randomized into an intervention or control
+   the intervention group demonstrated an average reduction in
+   older adolescents ages 18 to 19 years treated in an emergency room
+   following an alcohol-related event randomly assigned 94 of the 184
+   physician-delivered interventions in an emergency setting exist.
+   appropriate to promote consideration of change and an
+   the emergency department or has an extended stay in a trauma
+   necessity, an assessment of drinking behavior and a follow-up
+   Although an opportunity exists to intervene with patients who
+   that testing was an "essential" characteristic for those centers.40
+   score of 5.27. In an earlier report, Chang and Astrachan documented
+   step to developing an effective and efficient intervention program
+   change model appears to be an appealing one to help staff and
+   intervention becomes an integral part of the emergency triage
+   and treatment system, it will be an appendage that will be
+   Zuska, a surgeon with an interest in alcohol problems among injured
+   surgeon is an opportunity for intervention in a progressive, often
+   emergency department: an epidemiologic study. Acad Emerg Med
+   role of alcohol and other drugs-an EAST position paper prepared by
+   in the event: an
+   Intervention by an
+   alcohol health worker in an accident and emergency
+   29. Bernstein E, Bernstein J, Levenson S. Project ASSERT: an
+   drugs: an assessment of testing and clinical practices in U.S.
+   patients presenting to an ED with those presenting to primary care
+   dependence, or history of treatment for an alcohol problem.2
+   systems problems in an environment that at best can be described as
+   SBI is successful in an ED? Available resources are essential, as
+   be an important outcome. Rates of enrollment in treatment programs
+   5. Bernstein E, Bernstein J, Levenson S. Project ASSERT: an ED
+   with patients who enter the ED with an injury.3-10 Several
+   compelling reasons make the ED an important setting for alcohol
+   for patients seen in the ED, there can be an immediacy between the
+   identification of and intervention for an alcohol problem.
+   effective, an ED-based brief alcohol intervention model that
+   in informing future research. First, the ED potentially provides an
+   computerized, tailored messaging represents an important technique
+   11. Buerhaus PI, Staiger DO, Auerbach DI. Implications of an
+   Intervention by an
+   alcohol health worker in an accident and emergency
+   non-research settings will make an intervention their own. In any
+   is extremely important. He cited a brief report and an upcoming
+   change. She added that an in-home, brief intervention linked with
+   an easy assumption that a brief intervention is more appropriate
+   may constitute an
+   blood alcohol level patients could remember an intervention. If
+   Research and Quality has an R-03 program with a $100,000 cap,
+   interventionist could be an influential factor, she was unsure
+   both a unique opportunity for an intervention in the emergency
+   like an appropriate venue for alcohol interventions because many ED
+   toward getting help because of a connection made by an ED
+   DiClemente pointed out that in an ideal world, primary care
+   influence spontaneous remission such as an injury, type and
+   patients do not present with an injury. He wondered how much of
+   ```
+* In this command "the expression is searched for as a word"(man command information). therefore, when we are asking to find `an` it is actually trying to find all the instances of the word `an` in the text. So in this example, the word `and` would not be a match although it contains those letters. It is useful for a more specified search.
+
+ b) **grep -w***
+ ```
+(base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -wi "preventive" ./technical/government/Alcohol_Problems/Session4-PDF.txt 
+Implementing Preventive Interventions in
+ED-based intervention to increase acess to primary care, preventive
+Comments on Implementing Preventive Interventions in Emergency
+providing preventive services. The Society for Academic Emergency
+putting clinical preventive services into practice. He reasoned we
+(base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ 
+ ```
+* We can add two commands we learned for a more precise search. So `grep -w` still is searching for a whole word but by adding `i` to it we make it search case-insensitively. This allows some flexibility in our search. 
      
 
 
