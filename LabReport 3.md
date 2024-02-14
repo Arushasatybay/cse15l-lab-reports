@@ -276,71 +276,72 @@ public class ArrayExamples {
 * This command is the same as `grep -r` but because we specified `-R`, it will also show all symbolic links. However, in the above-provided text files, we can see no symbolic links were detected. "Symbolic links are commonly used to create shortcuts or aliases to files or directories, allowing for convenient access or organization within a file system"(ChatGPT Prompt: what are symbolic links used for)
 
 4.  a) **grep -w**:
-   ```
-   (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -w "an" ./technical/government/Alcohol_Problems/Session3-PDF.txt 
-   Excessive alcohol consumption plays an important role in many of
-   occasioned a call for an effective method of intervening with
-   The presence of an adverse consequence that can be linked to
-   medical problem; an automobile crash; unintentional injury; or
-   setting. In an emergency department (ED) study of injured crash
-   drinkers after their visit to an emergency setting. Several studies
-   emergency department seem to dissipate without an alcohol-specific
-   Re-injury and readmission to an emergency or other medical
-   intervention in an emergency department by alcohol health workers
-   a follow-up study, were randomized into an intervention or control
-   the intervention group demonstrated an average reduction in
-   older adolescents ages 18 to 19 years treated in an emergency room
-   following an alcohol-related event randomly assigned 94 of the 184
-   physician-delivered interventions in an emergency setting exist.
-   appropriate to promote consideration of change and an
-   the emergency department or has an extended stay in a trauma
-   necessity, an assessment of drinking behavior and a follow-up
-   Although an opportunity exists to intervene with patients who
-   that testing was an "essential" characteristic for those centers.40
-   score of 5.27. In an earlier report, Chang and Astrachan documented
-   step to developing an effective and efficient intervention program
-   change model appears to be an appealing one to help staff and
-   intervention becomes an integral part of the emergency triage
-   and treatment system, it will be an appendage that will be
-   Zuska, a surgeon with an interest in alcohol problems among injured
-   surgeon is an opportunity for intervention in a progressive, often
-   emergency department: an epidemiologic study. Acad Emerg Med
-   role of alcohol and other drugs-an EAST position paper prepared by
-   in the event: an
-   Intervention by an
-   alcohol health worker in an accident and emergency
-   29. Bernstein E, Bernstein J, Levenson S. Project ASSERT: an
-   drugs: an assessment of testing and clinical practices in U.S.
-   patients presenting to an ED with those presenting to primary care
-   dependence, or history of treatment for an alcohol problem.2
-   systems problems in an environment that at best can be described as
-   SBI is successful in an ED? Available resources are essential, as
-   be an important outcome. Rates of enrollment in treatment programs
-   5. Bernstein E, Bernstein J, Levenson S. Project ASSERT: an ED
-   with patients who enter the ED with an injury.3-10 Several
-   compelling reasons make the ED an important setting for alcohol
-   for patients seen in the ED, there can be an immediacy between the
-   identification of and intervention for an alcohol problem.
-   effective, an ED-based brief alcohol intervention model that
-   in informing future research. First, the ED potentially provides an
-   computerized, tailored messaging represents an important technique
-   11. Buerhaus PI, Staiger DO, Auerbach DI. Implications of an
-   Intervention by an
-   alcohol health worker in an accident and emergency
-   non-research settings will make an intervention their own. In any
-   is extremely important. He cited a brief report and an upcoming
-   change. She added that an in-home, brief intervention linked with
-   an easy assumption that a brief intervention is more appropriate
-   may constitute an
-   blood alcohol level patients could remember an intervention. If
-   Research and Quality has an R-03 program with a $100,000 cap,
-   interventionist could be an influential factor, she was unsure
-   both a unique opportunity for an intervention in the emergency
-   like an appropriate venue for alcohol interventions because many ED
-   toward getting help because of a connection made by an ED
-   DiClemente pointed out that in an ideal world, primary care
-   influence spontaneous remission such as an injury, type and
-   patients do not present with an injury. He wondered how much of
+   
+     ```
+     (base) MacBook-Pro-46:docsearch-1 aruzhansatybay$ grep -w "an" ./technical/government/Alcohol_Problems/Session3-PDF.txt 
+     Excessive alcohol consumption plays an important role in many of
+     occasioned a call for an effective method of intervening with
+     The presence of an adverse consequence that can be linked to
+     medical problem; an automobile crash; unintentional injury; or
+     setting. In an emergency department (ED) study of injured crash
+     drinkers after their visit to an emergency setting. Several studies
+     emergency department seem to dissipate without an alcohol-specific
+     Re-injury and readmission to an emergency or other medical
+     intervention in an emergency department by alcohol health workers
+     a follow-up study, were randomized into an intervention or control
+     the intervention group demonstrated an average reduction in
+     older adolescents ages 18 to 19 years treated in an emergency room
+     following an alcohol-related event randomly assigned 94 of the 184
+     physician-delivered interventions in an emergency setting exist.
+     appropriate to promote consideration of change and an
+     the emergency department or has an extended stay in a trauma
+     necessity, an assessment of drinking behavior and a follow-up
+     Although an opportunity exists to intervene with patients who
+     that testing was an "essential" characteristic for those centers.40
+     score of 5.27. In an earlier report, Chang and Astrachan documented
+     step to developing an effective and efficient intervention program
+     change model appears to be an appealing one to help staff and
+     intervention becomes an integral part of the emergency triage
+     and treatment system, it will be an appendage that will be
+     Zuska, a surgeon with an interest in alcohol problems among injured
+     surgeon is an opportunity for intervention in a progressive, often
+     emergency department: an epidemiologic study. Acad Emerg Med
+     role of alcohol and other drugs-an EAST position paper prepared by
+     in the event: an
+     Intervention by an
+     alcohol health worker in an accident and emergency
+     29. Bernstein E, Bernstein J, Levenson S. Project ASSERT: an
+     drugs: an assessment of testing and clinical practices in U.S.
+     patients presenting to an ED with those presenting to primary care
+     dependence, or history of treatment for an alcohol problem.2
+     systems problems in an environment that at best can be described as
+     SBI is successful in an ED? Available resources are essential, as
+     be an important outcome. Rates of enrollment in treatment programs
+     5. Bernstein E, Bernstein J, Levenson S. Project ASSERT: an ED
+     with patients who enter the ED with an injury.3-10 Several
+     compelling reasons make the ED an important setting for alcohol
+     for patients seen in the ED, there can be an immediacy between the
+     identification of and intervention for an alcohol problem.
+     effective, an ED-based brief alcohol intervention model that
+     in informing future research. First, the ED potentially provides an
+     computerized, tailored messaging represents an important technique
+     11. Buerhaus PI, Staiger DO, Auerbach DI. Implications of an
+     Intervention by an
+     alcohol health worker in an accident and emergency
+     non-research settings will make an intervention their own. In any
+     is extremely important. He cited a brief report and an upcoming
+     change. She added that an in-home, brief intervention linked with
+     an easy assumption that a brief intervention is more appropriate
+     may constitute an
+     blood alcohol level patients could remember an intervention. If
+     Research and Quality has an R-03 program with a $100,000 cap,
+     interventionist could be an influential factor, she was unsure
+     both a unique opportunity for an intervention in the emergency
+     like an appropriate venue for alcohol interventions because many ED
+     toward getting help because of a connection made by an ED
+     DiClemente pointed out that in an ideal world, primary care
+     influence spontaneous remission such as an injury, type and
+     patients do not present with an injury. He wondered how much of
    ```
 * In this command "the expression is searched for as a word"(man command information). therefore, when we are asking to find `an` it is actually trying to find all the instances of the word `an` in the text. So in this example, the word `and` would not be a match although it contains those letters. It is useful for a more specified search.
 
