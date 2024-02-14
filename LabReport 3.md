@@ -263,8 +263,6 @@ public class ArrayExamples {
 
  * This command "recursively search subdirectories listed"(`man` command information). It is useful because it searches for a specific pattern within all files in the 
      provided directory.
-
-
     b) **grep -R**:
   
      ```
