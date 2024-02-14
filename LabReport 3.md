@@ -225,7 +225,7 @@ public class ArrayExamples {
    879:                searched the Kenya residence of Wadi al Hage, who had become the new on-site manager
    884:                manager was taken over by Harun Fazul, a Kenyan citizen who had been in Bin Ladin's
   ```
-  *This command searches for a specific pattern and outputs lines with that pattern as well as states the line number. The command is very useful for locating the pattern occurrences and I assume might be very helpful for debugging, given it outputs the line number.
+  * This command searches for a specific pattern and outputs lines with that pattern as well as states the line number. The command is very useful for locating the pattern occurrences and I assume might be very helpful for debugging, given it outputs the line number.
 
 3. a) **grep -r**:
    ```
@@ -342,7 +342,7 @@ public class ArrayExamples {
      DiClemente pointed out that in an ideal world, primary care
      influence spontaneous remission such as an injury, type and
      patients do not present with an injury. He wondered how much of
-   ```
+     ```
 * In this command "the expression is searched for as a word"(man command information). therefore, when we are asking to find `an` it is actually trying to find all the instances of the word `an` in the text. So in this example, the word `and` would not be a match although it contains those letters. It is useful for a more specified search.
 
   b) **grep -w**:
