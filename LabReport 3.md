@@ -346,8 +346,6 @@ public class ArrayExamples {
      influence spontaneous remission such as an injury, type and
      patients do not present with an injury. He wondered how much of
      ```
-
-     
 * In this command "the expression is searched for as a word"(man command information). therefore, when we are asking to find `an` it is actually trying to find all the instances of the word `an` in the text. So in this example, the word `and` would not be a match although it contains those letters. It is useful for a more specified search.
 
 8. **grep -w**:
